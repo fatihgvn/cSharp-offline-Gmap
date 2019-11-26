@@ -24,8 +24,10 @@ namespace cSharp_offline_Gmap
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // cache dizini
             cacheFolder = Path.Combine(cpath, "Cache");
 
+            // dizin yoksa oluştur
             if (!Directory.Exists(cacheFolder))
                 Directory.CreateDirectory(cacheFolder);
             
